@@ -1,0 +1,15 @@
+s=c(rep(0,100), 10*exp(-(1:100)/20)*cos(2*pi*1:100/4))
+x=ts(s + rnorm(200, 0, 1))
+plot(x,col="blue")
+
+s=c(rep(0,100), 10*exp(-(1:100)/200)*cos(2*pi*1:100/4))
+x=ts(s + rnorm(200, 0, 1))
+plot(x,col="red")
+
+s=c(exp(-(1:100)/20))
+x=ts(s)
+s1=c(exp(-(1:100)/200)
+y=ts(s1)
+par(mfrow=c(2,1))
+plot.ts(x,col="blue")
+plot.ts(y,col="red")

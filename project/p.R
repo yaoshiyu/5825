@@ -1,0 +1,9 @@
+p=read.table("P://5825//project//Book1.csv",head=T,sep=",") 
+t1=p[1:30,]
+t2=t(t1)
+t3=t2[2:13,]
+t5=as.vector(t3)
+t6=ts(t5)
+ts.plot(t6)
+acf(t6,lag=60)
+pacf(t6,lag=60)
